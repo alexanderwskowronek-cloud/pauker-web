@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="index,follow">
+<title>Pauker</title>
+<style>:root{--paper:#F6F7F4;--paper2:#EEF0EB;--line:#D7DBD4;--ink:#1C2430;--ink2:#48524D;--mute:#6B7570;--accent:#2E6B4E;--marker:#F1C84B}
+@media (prefers-color-scheme:dark){:root{--paper:#151A1F;--paper2:#1C2229;--line:#2C343C;--ink:#EDEFE9;--ink2:#C2C8C1;--mute:#8E978F;--accent:#5FA983;--marker:#E5BE46}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;padding-inline:20px}
+a{color:var(--accent);text-underline-offset:2px}
+header,main,footer{max-width:44rem;margin-inline:auto}
+header{display:flex;flex-wrap:wrap;align-items:baseline;gap:.5rem 1.25rem;padding-block:1.5rem .75rem;border-bottom:1px solid var(--line)}
+.brand{font:700 1.35rem/1.2 ui-rounded,-apple-system,"SF Pro Rounded",system-ui,sans-serif;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:.5rem}
+.brand::before{content:"";width:.35rem;height:1.3rem;border-radius:2px;background:var(--marker)}
+.tagline{color:var(--mute);font-size:.9rem}
+nav{margin-left:auto;display:flex;flex-wrap:wrap;gap:.25rem 1rem;font-size:.95rem}
+nav a{color:var(--ink2);text-decoration:none;padding-block:.2rem}
+nav a[aria-current]{color:var(--ink);border-bottom:2px solid var(--marker)}
+main{padding-block:1.5rem 3rem}
+h1{font:700 2rem/1.2 ui-rounded,-apple-system,"SF Pro Rounded",system-ui,sans-serif;margin:.5rem 0 1rem;letter-spacing:-.01em}
+h2{font-size:1.3rem;line-height:1.3;margin:2.2rem 0 .6rem}
+h3{font-size:1.05rem;line-height:1.35;margin:1.6rem 0 .4rem}
+h4{font-size:1rem;margin:1.2rem 0 .3rem}
+p,ul{margin:.6rem 0}
+ul{padding-left:1.2rem}
+li{margin:.3rem 0}
+hr{border:0;border-top:1px solid var(--line);margin:2rem 0}
+code{font:.9em ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--paper2);padding:.05em .3em;border-radius:4px}
+.todo{background:var(--marker);color:#1C2430;padding:0 .2em;border-radius:3px}
+footer{border-top:1px solid var(--line);padding-block:1rem 2rem;color:var(--mute);font-size:.85rem;display:flex;flex-wrap:wrap;gap:.5rem 1.25rem}
+footer a{color:var(--mute)}
+@media (max-width:30rem){body{font-size:16px}h1{font-size:1.65rem}nav{margin-left:0}}</style>
+</head>
+<body>
+<header>
+<a class="brand" href="./">Pauker</a>
+<span class="tagline">Lehrerkalender für iPhone und Apple Watch</span>
+<nav aria-label="Hauptnavigation">
+<a href="./" aria-current="page">Start</a>
+<a href="./support/">Support</a>
+<a href="./datenschutz/">Datenschutz</a>
+<a href="./impressum/">Impressum</a>
+</nav>
+</header>
+<main>
+<h1 id="pauker">Pauker</h1>
+<p>Pauker ist ein Lehrerkalender für das iPhone, gemacht für die Minuten zwischen zwei Stunden: Stundenplan mit A- und B-Wochen, Notizen zu jeder Stunde, Termine, Klassenlisten und Noten an einem Ort. Auf der Apple Watch siehst du die nächste Stunde mit Raum und Restzeit, auf Wunsch tippt sie dich kurz vor Stundenende an.</p>
+<p>Alles, was du einträgst, bleibt auf deinem Gerät. Es gibt keinen Server, kein Konto, keine Nutzungsanalyse und keine Werbung.</p>
+<h2 id="hilfe-und-rechtliches">Hilfe und Rechtliches</h2>
+<ul>
+<li><a href="./support/">Support und häufige Fragen</a></li>
+<li><a href="./datenschutz/">Datenschutzerklärung</a></li>
+<li><a href="./impressum/">Impressum</a></li>
+</ul>
+</main>
+<footer>
+<span>© Alexander Skowronek</span>
+<a href="./impressum/">Impressum</a>
+<a href="./datenschutz/">Datenschutz</a>
+<span>Keine Cookies, kein Tracking.</span>
+</footer>
+</body>
+</html>
