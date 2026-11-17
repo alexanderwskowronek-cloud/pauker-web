@@ -5,7 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="no-referrer">
 <meta name="robots" content="index,follow">
-<title>Pauker</title>
+<title>Pauker – Lehrerkalender für iPhone und Apple Watch</title>
+<meta name="description" content="Pauker ist der Lehrerkalender für iPhone und Apple Watch: Stundenplan, Notizen, Termine, Klassenlisten und Noten an einem Ort, ohne Konto und ohne Server.">
+<link rel="canonical" href="https://alexanderwskowronek-cloud.github.io/pauker-web/">
+<meta name="apple-itunes-app" content="app-id=6811677555">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Pauker">
+<meta property="og:title" content="Pauker – Lehrerkalender für iPhone und Apple Watch">
+<meta property="og:description" content="Pauker ist der Lehrerkalender für iPhone und Apple Watch: Stundenplan, Notizen, Termine, Klassenlisten und Noten an einem Ort, ohne Konto und ohne Server.">
+<meta property="og:url" content="https://alexanderwskowronek-cloud.github.io/pauker-web/">
+<meta property="og:image" content="https://alexanderwskowronek-cloud.github.io/pauker-web/assets/01_heute.png">
 <style>:root{--paper:#F6F4EE;--paper2:#FFFFFF;--sunken:#EDEAE2;--line:#DCD8CE;--structure:#8E897F;--ink:#1B1A17;--ink2:#57534B;--mute:#66615A;--accent:#1E5A45;--on-accent:#FFFFFF;--marker:#F2C230}
 @media (prefers-color-scheme:dark){:root{--paper:#141412;--paper2:#1D1C19;--sunken:#0E0E0D;--line:#34322E;--structure:#77736A;--ink:#F3F1EA;--ink2:#CAC5BA;--mute:#ADA89D;--accent:#6CC3A0;--on-accent:#141412;--marker:#F2C230}}
 *{box-sizing:border-box}
@@ -55,7 +65,37 @@ body.landing main,body.landing header,body.landing footer{max-width:64rem}
 .two h2{margin-top:0}
 .quiet{color:var(--ink2)}
 @media (max-width:48rem){.proof,.shots,.two{grid-template-columns:1fr 1fr}}
-@media (max-width:30rem){.proof,.shots,.two{grid-template-columns:1fr}}</style>
+@media (max-width:30rem){.proof,.shots,.two{grid-template-columns:1fr}}table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.95rem}th,td{text-align:left;vertical-align:top;padding:.5rem .6rem;border-bottom:1px solid var(--line)}th{color:var(--ink2);font-weight:600}.answer{background:var(--paper2);border:1px solid var(--line);border-left:.35rem solid var(--marker);border-radius:12px;padding:1rem 1.2rem;margin:1rem 0 1.5rem}.answer p{margin:.3rem 0}.stand{color:var(--mute);font-size:.9rem}.crumbs{font-size:.9rem;color:var(--mute);margin:.2rem 0 0}.crumbs a{color:var(--mute)}.sources{font-size:.92rem;color:var(--ink2)}ol{padding-left:1.4rem;margin:.6rem 0}.guides{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1rem 0 2rem}.guides a{display:block;background:var(--paper2);border:1px solid var(--line);border-radius:16px;padding:1rem 1.2rem;text-decoration:none;color:var(--ink)}.guides b{display:block;margin-bottom:.25rem}.guides span{color:var(--ink2);font-size:.95rem;line-height:1.45}@media (max-width:30rem){.guides{grid-template-columns:1fr}}</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "MobileApplication",
+ "name": "Pauker – Lehrerkalender",
+ "operatingSystem": "iOS",
+ "applicationCategory": "EducationalApplication",
+ "url": "https://apps.apple.com/de/app/pauker-lehrerkalender/id6811677555",
+ "inLanguage": "de",
+ "description": "Pauker ist der Lehrerkalender für iPhone und Apple Watch: Stundenplan, Notizen, Termine, Klassenlisten und Noten an einem Ort, ohne Konto und ohne Server.",
+ "publisher": {
+  "@type": "Person",
+  "name": "Alexander Skowronek"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Alexander Skowronek"
+ },
+ "sameAs": "https://alexanderwskowronek-cloud.github.io/pauker-web/"
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebSite",
+ "name": "Pauker",
+ "url": "https://alexanderwskowronek-cloud.github.io/pauker-web/",
+ "inLanguage": "de"
+}
+</script>
 </head>
 <body class="landing">
 <header>
@@ -63,6 +103,8 @@ body.landing main,body.landing header,body.landing footer{max-width:64rem}
 <span class="tagline">Der Lehrerkalender für iPhone und Apple Watch</span>
 <nav aria-label="Hauptnavigation">
 <a href="./" aria-current="page">Start</a>
+<a href="./ratgeber/">Ratgeber</a>
+<a href="./faq/">FAQ</a>
 <a href="./support/">Support</a>
 <a href="./datenschutz/">Datenschutz</a>
 <a href="./impressum/">Impressum</a>
@@ -105,8 +147,18 @@ body.landing main,body.landing header,body.landing footer{max-width:64rem}
 </div>
 </div>
 
+<h2>Ratgeber</h2>
+<p>Pauker – Lehrerkalender ist eine App für iPhone und Apple Watch von Alexander Skowronek, die Stundenplan, Termine, Stundennotizen, Klassenlisten und Noten an einem Ort führt, ohne Konto und ohne Server. Rund um diesen Alltag beantworten die Ratgeber Fragen aus der Schule, jeweils mit Quellen.</p>
+<p><a href="./ratgeber/">Alle Ratgeber</a> · <a href="./faq/">Häufige Fragen zu Pauker</a></p>
+<div class="guides">
+<a href="./ratgeber/lehrerkalender-digital/"><b>Lehrerkalender digital führen</b><span>Was hineingehört, was nicht, und wie du ihn in sechs Schritten einrichtest.</span></a>
+<a href="./ratgeber/unterricht-zwischen-zwei-stunden/"><b>Unterricht vorbereiten zwischen zwei Stunden</b><span>Vier Schritte für die kurze Pause, damit die nächste Stunde ohne Suchen beginnt.</span></a>
+<a href="./ratgeber/schuelerdaten-smartphone-datenschutz/"><b>Schülerdaten auf dem Smartphone</b><span>Wer entscheidet, was die DSGVO verlangt und worauf du bei einer App achtest.</span></a>
+<a href="./ratgeber/stundenplan-apple-watch/"><b>Stundenplan auf der Apple Watch</b><span>Nächste Stunde und Raum auf dem Zifferblatt, und was tun, wenn nichts erscheint.</span></a>
+</div>
+
 <h2>Hilfe</h2>
-<p>Fragen, Fehler, Ideen aus dem Schulalltag: <a href="./support/">Support und häufige Fragen</a>. Gebaut von einem Einzelentwickler in Nordrhein-Westfalen, mit Dank an die Lehrkräfte, die ihren Papierkalender zum Vergleich auf den Tisch gelegt haben.</p>
+<p>Fragen, Fehler, Ideen aus dem Schulalltag: <a href="./support/">Support</a> und <a href="./faq/">häufige Fragen</a>. Gebaut von einem Einzelentwickler in Nordrhein-Westfalen, mit Dank an die Lehrkräfte, die ihren Papierkalender zum Vergleich auf den Tisch gelegt haben.</p>
 
 </main>
 <footer>

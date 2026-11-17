@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="index,follow">
+<title>Lehrerkalender digital führen: Was gehört hinein?</title>
+<meta name="description" content="Was gehört in einen digitalen Lehrerkalender? Stundenplan, Ferien, Termine, Stundennotizen, Listen und Noten: eine Übersicht mit Tabelle und Einrichtung.">
+<link rel="canonical" href="https://alexanderwskowronek-cloud.github.io/pauker-web/ratgeber/lehrerkalender-digital/">
+<meta name="apple-itunes-app" content="app-id=6811677555">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Pauker">
+<meta property="og:title" content="Lehrerkalender digital führen: Was gehört hinein?">
+<meta property="og:description" content="Was gehört in einen digitalen Lehrerkalender? Stundenplan, Ferien, Termine, Stundennotizen, Listen und Noten: eine Übersicht mit Tabelle und Einrichtung.">
+<meta property="og:url" content="https://alexanderwskowronek-cloud.github.io/pauker-web/ratgeber/lehrerkalender-digital/">
+<meta property="og:image" content="https://alexanderwskowronek-cloud.github.io/pauker-web/assets/01_heute.png">
+<style>:root{--paper:#F6F4EE;--paper2:#FFFFFF;--sunken:#EDEAE2;--line:#DCD8CE;--structure:#8E897F;--ink:#1B1A17;--ink2:#57534B;--mute:#66615A;--accent:#1E5A45;--on-accent:#FFFFFF;--marker:#F2C230}
+@media (prefers-color-scheme:dark){:root{--paper:#141412;--paper2:#1D1C19;--sunken:#0E0E0D;--line:#34322E;--structure:#77736A;--ink:#F3F1EA;--ink2:#CAC5BA;--mute:#ADA89D;--accent:#6CC3A0;--on-accent:#141412;--marker:#F2C230}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;padding-inline:20px}
+a{color:var(--accent);text-underline-offset:2px}
+header,main,footer{max-width:44rem;margin-inline:auto}
+header{display:flex;flex-wrap:wrap;align-items:baseline;gap:.5rem 1.25rem;padding-block:1.5rem .75rem;border-bottom:1px solid var(--line)}
+.brand{font:600 1.35rem/1.2 -apple-system,"SF Pro Display",system-ui,sans-serif;letter-spacing:-.01em;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:.5rem}
+.brand::before{content:"";width:.35rem;height:1.3rem;border-radius:2px;background:var(--marker)}
+.tagline{color:var(--mute);font-size:.9rem}
+nav{margin-left:auto;display:flex;flex-wrap:wrap;gap:.25rem 1rem;font-size:.95rem}
+nav a{color:var(--ink2);text-decoration:none;padding-block:.2rem}
+nav a[aria-current]{color:var(--ink);border-bottom:2px solid var(--marker)}
+main{padding-block:1.5rem 3rem}
+h1{font:600 2rem/1.2 -apple-system,"SF Pro Display",system-ui,sans-serif;margin:.5rem 0 1rem;letter-spacing:-.01em}
+h2{font-size:1.3rem;line-height:1.3;margin:2.2rem 0 .6rem}
+h3{font-size:1.05rem;line-height:1.35;margin:1.6rem 0 .4rem}
+h4{font-size:1rem;margin:1.2rem 0 .3rem}
+p,ul{margin:.6rem 0}
+ul{padding-left:1.2rem}
+li{margin:.3rem 0}
+hr{border:0;border-top:1px solid var(--line);margin:2rem 0}
+code{font:.9em ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--paper2);padding:.05em .3em;border-radius:4px}
+.todo{background:var(--marker);color:#1C2430;padding:0 .2em;border-radius:3px}
+footer{border-top:1px solid var(--line);padding-block:1rem 2rem;color:var(--mute);font-size:.85rem;display:flex;flex-wrap:wrap;gap:.5rem 1.25rem}
+footer a{color:var(--mute)}
+@media (max-width:30rem){body{font-size:16px}h1{font-size:1.65rem}nav{margin-left:0}}
+
+body.landing main,body.landing header,body.landing footer{max-width:64rem}
+.hero{padding-block:3rem 2rem}
+.hero .bar{width:3rem;height:.4rem;border-radius:3px;background:var(--marker);margin-bottom:1.2rem}
+.hero h1{font-size:clamp(2.2rem,5.5vw,3.6rem);line-height:1.05;letter-spacing:-.02em;margin:0 0 .8rem;max-width:22ch;text-wrap:balance}
+.hero p.lead{font-size:1.25rem;line-height:1.45;color:var(--ink2);max-width:36rem;margin:0 0 1.4rem}
+.cta{display:inline-flex;align-items:center;gap:.5rem;background:var(--accent);color:var(--on-accent);text-decoration:none;font-weight:600;padding:.85rem 1.4rem;border-radius:999px}
+.cta:hover{filter:brightness(1.08)}
+.cta-note{display:block;margin-top:.6rem;color:var(--mute);font-size:.9rem}
+.proof{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:2rem 0 3rem}
+.proof div{background:var(--paper2);border:1px solid var(--line);border-radius:16px;padding:1.1rem 1.2rem}
+.proof b{display:block;font-size:1.05rem;margin-bottom:.25rem}
+.proof span{color:var(--ink2);font-size:.95rem;line-height:1.45}
+.shots{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem;margin:1rem 0 3rem}
+.shots figure{margin:0}
+.shots img{width:100%;height:auto;border-radius:12px;border:1px solid var(--line);display:block}
+.shots figcaption{font-size:.9rem;color:var(--ink2);margin-top:.5rem;line-height:1.4}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem;margin:2rem 0}
+.two h2{margin-top:0}
+.quiet{color:var(--ink2)}
+@media (max-width:48rem){.proof,.shots,.two{grid-template-columns:1fr 1fr}}
+@media (max-width:30rem){.proof,.shots,.two{grid-template-columns:1fr}}table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.95rem}th,td{text-align:left;vertical-align:top;padding:.5rem .6rem;border-bottom:1px solid var(--line)}th{color:var(--ink2);font-weight:600}.answer{background:var(--paper2);border:1px solid var(--line);border-left:.35rem solid var(--marker);border-radius:12px;padding:1rem 1.2rem;margin:1rem 0 1.5rem}.answer p{margin:.3rem 0}.stand{color:var(--mute);font-size:.9rem}.crumbs{font-size:.9rem;color:var(--mute);margin:.2rem 0 0}.crumbs a{color:var(--mute)}.sources{font-size:.92rem;color:var(--ink2)}ol{padding-left:1.4rem;margin:.6rem 0}.guides{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1rem 0 2rem}.guides a{display:block;background:var(--paper2);border:1px solid var(--line);border-radius:16px;padding:1rem 1.2rem;text-decoration:none;color:var(--ink)}.guides b{display:block;margin-bottom:.25rem}.guides span{color:var(--ink2);font-size:.95rem;line-height:1.45}@media (max-width:30rem){.guides{grid-template-columns:1fr}}</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "Lehrerkalender digital führen: Was gehört hinein?",
+ "description": "Was gehört in einen digitalen Lehrerkalender? Stundenplan, Ferien, Termine, Stundennotizen, Listen und Noten: eine Übersicht mit Tabelle und Einrichtung.",
+ "inLanguage": "de",
+ "datePublished": "2026-11-17",
+ "dateModified": "2026-11-17",
+ "author": {
+  "@type": "Person",
+  "name": "Alexander Skowronek"
+ },
+ "publisher": {
+  "@type": "Person",
+  "name": "Alexander Skowronek"
+ },
+ "mainEntityOfPage": "https://alexanderwskowronek-cloud.github.io/pauker-web/ratgeber/lehrerkalender-digital/",
+ "about": {
+  "@type": "MobileApplication",
+  "name": "Pauker – Lehrerkalender",
+  "url": "https://apps.apple.com/de/app/pauker-lehrerkalender/id6811677555"
+ }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Start",
+   "item": "https://alexanderwskowronek-cloud.github.io/pauker-web/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "Ratgeber",
+   "item": "https://alexanderwskowronek-cloud.github.io/pauker-web/ratgeber/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "Lehrerkalender digital führen: Was gehört hinein?",
+   "item": "https://alexanderwskowronek-cloud.github.io/pauker-web/ratgeber/lehrerkalender-digital/"
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<header>
+<a class="brand" href="../../">Pauker</a>
+<span class="tagline">Der Lehrerkalender für iPhone und Apple Watch</span>
+<nav aria-label="Hauptnavigation">
+<a href="../../">Start</a>
+<a href="../../ratgeber/" aria-current="page">Ratgeber</a>
+<a href="../../faq/">FAQ</a>
+<a href="../../support/">Support</a>
+<a href="../../datenschutz/">Datenschutz</a>
+<a href="../../impressum/">Impressum</a>
+</nav>
+</header>
+<main>
+<p class="crumbs"><a href="../../">Start</a> › <a href="../../ratgeber/">Ratgeber</a> › Lehrerkalender digital führen: Was gehört hinein?</p>
+<h1>Lehrerkalender digital führen: Was gehört hinein?</h1>
+<p class="stand">Stand: November 2026</p>
+<div class="answer"><p>In einen digitalen Lehrerkalender gehören der Stundenplan mit Räumen und Zeitraster, die Ferien und Termine des Schuljahres, eine kurze Notiz zu jeder gehaltenen Stunde sowie, wenn deine Schule es erlaubt, Klassenlisten, Anwesenheit und Noten. Entscheidend ist eine Ordnung, die man im Vorbeigehen liest: eine Zeile pro Stunde, die Woche auf einen Blick und das Halbjahr als Übersicht.</p></div>
+<h2>Was gehört in einen Lehrerkalender?</h2>
+<p>Die folgende Tabelle ordnet die Inhalte danach, wie oft du sie brauchst. Die ersten vier Zeilen betreffen nur deine eigene Arbeit, die letzten beiden enthalten Daten von Schülerinnen und Schülern.</p>
+<table>
+<thead><tr><th>Bereich</th><th>Was hineingehört</th><th>Wie oft du es brauchst</th></tr></thead>
+<tbody>
+<tr><td>Stundenplan</td><td>Kurs oder Klasse, Raum, Uhrzeit, Doppelstunden, Aufsichten, A- und B-Wochen</td><td>mehrmals täglich</td></tr>
+<tr><td>Schuljahr</td><td>Ferien deines Bundeslandes, Konferenzen, Elternsprechtage, Klassenarbeiten und Klausuren</td><td>wöchentlich</td></tr>
+<tr><td>Stundennotizen</td><td>Thema der Stunde, gestellte Hausaufgabe, offene Punkte für das nächste Mal</td><td>nach jeder Stunde</td></tr>
+<tr><td>Halbjahresübersicht</td><td>Schulwochen, Ferien und Termine für Arbeiten auf einer Seite</td><td>bei der Planung</td></tr>
+<tr><td>Klassen- und Kurslisten</td><td>Namen oder Kürzel, Anwesenheit</td><td>täglich, nur mit Erlaubnis der Schule</td></tr>
+<tr><td>Noten</td><td>Noten mit Tendenz oder Punkte der Oberstufe, Notenschlüssel für Arbeiten</td><td>nach Leistungen, nur mit Erlaubnis der Schule</td></tr>
+</tbody>
+</table>
+
+<h2>Was gehört nicht hinein?</h2>
+<p>Alles, was du für den Unterricht nicht brauchst. Die Datenschutz-Grundverordnung verlangt, dass personenbezogene Daten „auf das für die Zwecke der Verarbeitung notwendige Maß beschränkt“ sind (Art. 5 Abs. 1 lit. c DSGVO, Datenminimierung). Gesundheitsdaten, Diagnosen oder Atteste zählen zu den besonders geschützten Daten nach Art. 9 DSGVO und gehören nicht in einen persönlichen Kalender, auch nicht in ein Freitextfeld.</p>
+
+<h2>Wie richte ich einen digitalen Lehrerkalender ein?</h2>
+<ol>
+<li>Schuljahr und Bundesland festlegen, damit die Ferien im Kalender stehen.</li>
+<li>Den Stundenplan eintragen oder aus einer Kalenderdatei übernehmen, die dein Stundenplanportal anbietet.</li>
+<li>Besonderheiten ergänzen: A- und B-Wochen, Doppelstunden, Aufsichten, Sprechstunden.</li>
+<li>Feste Termine des Halbjahres eintragen, vor allem Klassenarbeiten und Klausuren.</li>
+<li>Erst danach, und nur mit Erlaubnis deiner Schule, Klassenlisten anlegen.</li>
+<li>Eine Sicherung einrichten und sie dort ablegen, wo deine Schule es erlaubt.</li>
+</ol>
+
+<h2>Was passiert, wenn sich der Stundenplan im Halbjahr ändert?</h2>
+<p>Ein guter digitaler Kalender lässt die Änderung ab einem gewählten Tag gelten. Die Stunden davor bleiben mit ihren Notizen erhalten, damit du später nachschlagen kannst, was in welcher Stunde behandelt wurde.</p>
+
+<h2>Papier oder digital: Worin liegt der Unterschied?</h2>
+<table>
+<thead><tr><th></th><th>Gedruckter Kalender</th><th>Digitaler Kalender</th></tr></thead>
+<tbody>
+<tr><td>Stundenplanänderung</td><td>neu schreiben oder überkleben</td><td>ab einem Stichtag ändern, Vergangenes bleibt</td></tr>
+<tr><td>Ferien</td><td>von Hand eintragen</td><td>nach Bundesland vorbelegt, je nach App</td></tr>
+<tr><td>Notizen zur letzten Stunde</td><td>zurückblättern</td><td>beim nächsten Termin des Kurses oben</td></tr>
+<tr><td>Verlust</td><td>alles weg</td><td>wiederherstellbar, wenn eine Sicherung existiert</td></tr>
+<tr><td>Schülerdaten</td><td>Regeln der Schule</td><td>Regeln der Schule, zusätzlich Gerätesicherheit</td></tr>
+</tbody>
+</table>
+
+<h2>Quellen</h2>
+<p class="sources">Verordnung (EU) 2016/679 (DSGVO), Art. 5 Abs. 1 lit. c und Art. 9, <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32016R0679">EUR-Lex</a>; Wortlaut gegengeprüft mit <a href="https://dsgvo-gesetz.de/art-5-dsgvo/">dsgvo-gesetz.de</a>.</p>
+<h2>Wie Pauker dabei hilft</h2>
+<p>Pauker – Lehrerkalender ist eine App für iPhone und Apple Watch von Alexander Skowronek, die Stundenplan, Termine, Stundennotizen, Klassenlisten und Noten an einem Ort führt, ohne Konto und ohne Server. <a href="../../">Mehr über Pauker</a> · <a href="https://apps.apple.com/de/app/pauker-lehrerkalender/id6811677555">Pauker im App Store</a></p>
+<p class="quiet">Weitere Ratgeber: <a href="../../ratgeber/">Übersicht</a> · Fragen zur App: <a href="../../faq/">FAQ</a></p>
+</main>
+<footer>
+<span>© Pauker</span>
+<a href="../../impressum/">Impressum</a>
+<a href="../../datenschutz/">Datenschutz</a>
+<span>Keine Cookies, kein Tracking.</span>
+</footer>
+</body>
+</html>
